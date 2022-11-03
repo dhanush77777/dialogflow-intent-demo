@@ -4,7 +4,7 @@ import sqlite3
 import dialogflow
 from google.api_core.exceptions import InvalidArgument
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'sample-key.json'
+#os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'sample-key.json'
 
 DIALOGFLOW_PROJECT_ID = 'sample-glae'
 DIALOGFLOW_LANGUAGE_CODE = 'en'
