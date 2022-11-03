@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+       <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <style>
+    .form-control{width: 200px; height: 79px}
+    </style>
+  </head>
+  <br>
+  <center>
+    <header>
+      <div class="container">
+        <h1><strong>TESTING</strong></h1>
+        <!-- <div id="brandname">
+          
+        </div> -->
+      </div>
+    </header>
+  </br>
+  
+
+</br>
+
+    <div class="ml-container">
+      <form action="{{ url_for('predict')}}" method="POST">
+        <textarea
+          name="message"
+          rows="5"
+          cols="50"
+          placeholder="User's untemplated data here....."
+        ></textarea>
+        <br />
+
+       <input type="submit" class="btn-info" value="send" />
+      </form>
+    </div>
+    <br>
+    <br>
+   {{pre}}
+   </center>
+  </body>
+</html>
